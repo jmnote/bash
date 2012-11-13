@@ -1,4 +1,5 @@
 #!/bin/sh
+# http://jmnote.com/wiki/linux_actual_memory_usage
 MEM_TOTAL=`free | grep ^Mem | awk '{print $2}'`
 MEM_FREE1=`free | grep ^Mem | awk '{print $4}'`
 MEM_FREE2=`free | grep ^-/+ | awk '{print $4}'`
